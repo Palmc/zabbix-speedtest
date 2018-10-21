@@ -2,7 +2,7 @@
 
 ## Installation (Raspberry Pi)
 
-- Move the speedtest binary:`mv speedtest.sh /etc/zabbix/bin` `mv speedtest-linux-arm-v1.0.5 /etc/zabbix/bin/speedtest`
+- Move the speedtest binary: `mv speedtest.sh /etc/zabbix/bin` `mv speedtest-linux-arm-v1.0.5 /etc/zabbix/bin/speedtest`
 - Make them both executable: `chmod +x /etc/zabbix/bin/speedtest.sh /etc/zabbix/bin/speedtest`
 - Install the systemd service and timer: `mv speedtest.service speedtest.timer /etc/systemd/system`
 - Start and enable the timer: `systemctl enable --now speedtest.timer`
