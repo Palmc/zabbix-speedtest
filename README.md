@@ -1,6 +1,6 @@
 # Zabbix Speedtest template
 
-## Installation (Raspberry Pi)
+## Installation (Raspbian 9)
 
 - Move the speedtest binary: `mv speedtest.sh /etc/zabbix/bin`, `mv speedtest-linux-arm-v1.0.5 /etc/zabbix/bin/speedtest`
 - Make them both executable: `chmod +x /etc/zabbix/bin/speedtest.sh /etc/zabbix/bin/speedtest`
