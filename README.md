@@ -6,6 +6,6 @@
 - Make them both executable: `chmod +x /etc/zabbix/bin/speedtest.sh /etc/zabbix/bin/speedtest`
 - Install the systemd service and timer: `mv speedtest.service speedtest.timer /etc/systemd/system`
 - Start and enable the timer: `systemctl enable --now speedtest.timer`
-- Import the zabbix-agent config: `cp speedtest.conf /etc/zabbix/zabbix_agentd.conf.d`
+- Import the zabbix-agent config: `cp speedtest.conf /etc/zabbix/zabbix_agentd.d`
 - Restart zabbix-agent: `sudo systemctl restart zabbix-agent`
 - Import `template_speedtest.xml` on your Zabbix server
